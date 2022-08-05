@@ -5,34 +5,25 @@ import CreateContact from "../../components/Forms/createContactForm/CreateContac
 import "./home.css";
 
 const Home = (props) => {
-  const CONTACT_KEY = "contacts";
+  const CONTACT_KEY = "contactList";
   const [showCreateContact, setCreateContact] = useState(false);
-  const [contacts, setContacts] = useState([]);
-
+  const [contacts, setContacts] = useState(
+    JSON.parse(window.localStorage.getItem(CONTACT_KEY)) || []
+  );
   const addContactHandler = (contact) => {
     setContacts([...contacts, contact]);
   };
 
   useEffect(() => {
-    localStorage.setItem(CONTACT_KEY, JSON.stringify(contacts));
+    window.localStorage.setItem(CONTACT_KEY, JSON.stringify(contacts));
   }, [contacts]);
-
-  useEffect(() => {
-    const allContacts = JSON.parse(localStorage.getItem(CONTACT_KEY));
-    setContacts(allContacts);
-    console.log(allContacts);
-  }, []);
 
   return (
     <>
-      {showCreateContact && (
-        <CreateContact addContactHandler={addContactHandler} />
-      )}
-
       <section className="home">
         <Container>
           <Row className="justify-content-center">
-            <Col md={8}>
+            <Col md={7}>
               <div className="contacts">
                 <div className="contact-top">
                   <p>Contact Management System</p>
@@ -43,6 +34,12 @@ const Home = (props) => {
                     {!showCreateContact ? "create new contact" : "close"}
                   </button>
                 </div>
+
+                {showCreateContact && (
+                  <div className="mt-4">
+                    <CreateContact addContactHandler={addContactHandler} />
+                  </div>
+                )}
 
                 {contacts.map((con, i) => {
                   return (

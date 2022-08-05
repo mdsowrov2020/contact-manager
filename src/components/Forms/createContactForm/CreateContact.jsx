@@ -22,6 +22,7 @@ const CreateContact = ({ addContactHandler }) => {
       alert("Input fields cannot be empty");
     }
     addContactHandler(contact);
+
     setContact({ name: "", email: "", phone: "" });
   };
   return (

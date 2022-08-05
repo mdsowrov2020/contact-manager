@@ -8,14 +8,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  background-image: linear-gradient(
-    to left top,
-    #960e1b,
-    #ac1155,
-    #a73a92,
-    #8363c8,
-    #1286eb
-  );
+
+  background-color: #1e1e1e;
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;

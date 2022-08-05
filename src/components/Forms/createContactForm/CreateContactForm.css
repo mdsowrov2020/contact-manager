@@ -1,18 +1,9 @@
 .create-contact-form {
-  position: fixed;
-  z-index: 99;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
+  width: 100%;
   height: auto;
   padding: 25px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #1e1e1e;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .custom-input {
@@ -32,7 +23,7 @@
   border-radius: 100vmax !important;
   outline: none !important;
   box-shadow: none !important;
-  background-color: #109777 !important;
+  background-color: #0a9f55 !important;
   color: #fdf8f8;
   text-transform: uppercase;
   font-size: 16px;
