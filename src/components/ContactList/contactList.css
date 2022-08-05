@@ -1,0 +1,32 @@
+.list-content {
+  height: 45px;
+  line-height: 45px;
+}
+
+.list-content p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.action-btns {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.action-btn {
+  background-color: transparent !important;
+  font-size: 18px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  margin-right: 10px;
+  color: #fff;
+}
+/* .action-btn.danger {
+  color: red;
+} */
+.action-btn:last-child {
+  margin-right: 0;
+}

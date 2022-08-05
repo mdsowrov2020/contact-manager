@@ -1,0 +1,39 @@
+.create-contact-form {
+  position: fixed;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-input {
+  background: rgba(255, 255, 255, 1) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  height: 50px !important;
+  border: none !important;
+  border-radius: 100vmax !important;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none !important;
+  border-radius: 100vmax !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #109777 !important;
+  color: #fdf8f8;
+  text-transform: uppercase;
+  font-size: 16px;
+}
